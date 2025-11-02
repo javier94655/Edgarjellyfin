@@ -496,7 +496,7 @@ html,
 .capítuloMiniatura {
     borde-radio: var(--tarjetas-redondeadas) !importante;
     margen inferior: 47px !importante;
-    box-shadow: 0 0 1.9vh #000 !important;
+    box-shadow: 0 0 1.9vh #000 !importante;
 }
 .chapterThumbTextContainer {
     Antecedentes: ninguno !importante;
@@ -1300,8 +1300,13 @@ Resumen del diseño de escritorio {
 }
 
 /* =================================================================
-   NUEVAS MODIFICACIONES PARA ELIMINAR OSCURECIMIENTO EN PÁGINA DE INICIO (HOME)
+   MODIFICACIONES PARA ELIMINAR OSCURECIMIENTO EN PÁGINA DE INICIO (HOME)
    ================================================================= */
+
+/* Anular el gradiente oscuro que cubre toda la pantalla */
+.page {
+    background: transparent !important;
+}
 
 /* Eliminar el oscurecimiento y/o desenfoque de la imagen de fondo (Home/Detalles) */
 .backdropImage {
