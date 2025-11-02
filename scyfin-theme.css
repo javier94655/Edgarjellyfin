@@ -1263,8 +1263,8 @@ Resumen del diseño de escritorio {
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailsGroupItem,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailSectionContent,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .trackSelections {
-    fondo: transparent !important; /* <--- MODIFICADO: Antes tenía var(--primary-background-transparent) */
-    filtro de fondo: none !important; /* <--- MODIFICADO: Antes tenía desenfoque(var(--desenfoque)) */
+    fondo: transparent !important; /* MODIFICADO: Elimina la capa semi-transparente de las tarjetas */
+    filtro de fondo: none !important; /* MODIFICADO: Elimina el desenfoque de las tarjetas */
 }
 
 /* Cajón transparente */
@@ -1297,4 +1297,18 @@ Resumen del diseño de escritorio {
 .layout-desktop:has(.backgroundContainer.withBackdrop) .navMenuOption:hover:not(.navMenuOption-selected) {
     fondo: var(--primary-background-transparent) !important;
     filtro de fondo: desenfoque(var(--desenfoque)) !importante;
+}
+
+/* =================================================================
+   NUEVAS MODIFICACIONES PARA ELIMINAR OSCURECIMIENTO EN PÁGINA DE INICIO (HOME)
+   ================================================================= */
+
+/* Eliminar el oscurecimiento y/o desenfoque de la imagen de fondo (Home/Detalles) */
+.backdropImage {
+    filter: none !important;
+}
+
+/* Asegurar que el contenedor principal no aplique un fondo de color/gradiente oscuro */
+.backgroundContainer {
+    background: transparent !important;
 }
