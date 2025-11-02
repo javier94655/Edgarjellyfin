@@ -1260,11 +1260,12 @@ Resumen del diseño de escritorio {
 /* Soporte para fondos dinámicos */
 
 /* Tarjetas translúcidas */
+/* Tarjetas translúcidas */
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailsGroupItem,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailSectionContent,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .trackSelections {
-    fondo: var(--primary-background-transparent) !important;
-    filtro de fondo: desenfoque(var(--desenfoque)) !importante;
+    fondo: transparent !important; /* <--- EDITA ESTA LÍNEA */
+    filtro de fondo: none !important; /* <--- EDITA ESTA LÍNEA */
 }
 
 /* Cajón transparente */
@@ -1298,4 +1299,5 @@ Resumen del diseño de escritorio {
     fondo: var(--primary-background-transparent) !important;
     filtro de fondo: desenfoque(var(--desenfoque)) !importante;
 }
+
 
