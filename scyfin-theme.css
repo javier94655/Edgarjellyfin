@@ -3,9 +3,9 @@
     --primario-r: 0;
     --primary-g: 164;
     --primario-b: 220;
-    --color-acento-primario: rgba(var(--primario-r), var(--primario-g), var(--primario-b), 1.0);
+    --color-acento-primario: rgba(var(--primario-r), var(--primary-g), var(--primario-b), 1.0);
     --color-de-acento-secundario: #00a4dc20;
-    --color-de-fondo-primario: transparent;
+    --color-de-fondo-primario: #101010;
     --color-de-fondo-secundario: #181818;
     --fondo-primario-transparente: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
@@ -1260,12 +1260,11 @@ Resumen del diseño de escritorio {
 /* Soporte para fondos dinámicos */
 
 /* Tarjetas translúcidas */
-/* Tarjetas translúcidas */
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailsGroupItem,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .detailSectionContent,
 .layout-desktop #itemDetailPage:not(.noBackdropTransparency) .trackSelections {
-    fondo: transparent !important; /* <--- EDITA ESTA LÍNEA */
-    filtro de fondo: none !important; /* <--- EDITA ESTA LÍNEA */
+    fondo: transparent !important; /* <--- MODIFICADO: Antes tenía var(--primary-background-transparent) */
+    filtro de fondo: none !important; /* <--- MODIFICADO: Antes tenía desenfoque(var(--desenfoque)) */
 }
 
 /* Cajón transparente */
@@ -1299,5 +1298,3 @@ Resumen del diseño de escritorio {
     fondo: var(--primary-background-transparent) !important;
     filtro de fondo: desenfoque(var(--desenfoque)) !importante;
 }
-
-
