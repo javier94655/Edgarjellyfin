@@ -5,7 +5,7 @@
     --primario-b: 220;
     --color-acento-primario: rgba(var(--primario-r), var(--primario-g), var(--primario-b), 1.0);
     --color-de-acento-secundario: #00a4dc20;
-    --color-de-fondo-primario: #101010;
+    --color-de-fondo-primario: transparent;
     --color-de-fondo-secundario: #181818;
     --fondo-primario-transparente: rgba(35,35,35,0.5);
     --secondary-background-transparent: rgba(0,0,0,0.6);
@@ -1298,3 +1298,4 @@ Resumen del diseño de escritorio {
     fondo: var(--primary-background-transparent) !important;
     filtro de fondo: desenfoque(var(--desenfoque)) !importante;
 }
+
